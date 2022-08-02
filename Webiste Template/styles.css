@@ -1,130 +1,513 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* ======================== GOOGLE FONTS ========================== */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-/* variables */
+/* ======================== VARIABLES ========================== */
 :root {
-    /* dark shades of primary color*/
-    --clr-primary-1: hsl(205, 86%, 17%);
-    --clr-primary-2: hsl(205, 77%, 27%);
-    --clr-primary-3: hsl(205, 72%, 37%);
-    --clr-primary-4: hsl(205, 63%, 48%);
-    /* primary/main color */
-    --clr-primary-5: #49a6e9;
-    /* lighter shades of primary color */
-    --clr-primary-6: hsl(205, 89%, 70%);
-    --clr-primary-7: hsl(205, 90%, 76%);
-    --clr-primary-8: hsl(205, 86%, 81%);
-    --clr-primary-9: hsl(205, 90%, 88%);
-    --clr-primary-10: hsl(205, 100%, 96%);
-    /* darkest grey - used for headings */
-    --clr-grey-1: hsl(209, 61%, 16%);
-    --clr-grey-2: hsl(211, 39%, 23%);
-    --clr-grey-3: hsl(209, 34%, 30%);
-    --clr-grey-4: hsl(209, 28%, 39%);
-    /* grey used for paragraphs */
-    --clr-grey-5: hsl(210, 22%, 49%);
-    --clr-grey-6: hsl(209, 23%, 60%);
-    --clr-grey-7: hsl(211, 27%, 70%);
-    --clr-grey-8: hsl(210, 31%, 80%);
-    --clr-grey-9: hsl(212, 33%, 89%);
-    --clr-grey-10: hsl(210, 36%, 96%);
-    --clr-white: #fff;
-    --clr-red-dark: hsl(360, 67%, 44%);
-    --clr-red-light: hsl(360, 71%, 66%);
-    --clr-green-dark: hsl(125, 67%, 44%);
-    --clr-green-light: hsl(125, 71%, 66%);
-    --clr-secondary: hsla(182, 63%, 54%);
-    --clr-black: #222;
-    --ff-primary: "Roboto", sans-serif;
-    --ff-secondary: "Open Sans", sans-serif;
-    --ff-secondary: "Open Sans", sans-serif;
-    --transition: all 0.3s linear;
-    --spacing: 0.25rem;
-    --radius: 0.5rem;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --max-width: 1170px;
-    --fixed-width: 620px;
+  --dark1: #2c3333;
+  --dark2: #395b64;
+  --light1: #a5c9ca;
+  --light2: #e7f6f2;
+  --red: #fc0e49;
+
+  --transition: all 300ms ease-in-out;
 }
-/* Global styles */
+
+/* ======================== GLOBAL STYLES ========================== */
 html {
-    scroll-behavior: smooth;  
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 *,
 ::after,
 ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: var(--ff-secondary);
-    background: var(--clr-grey-10);
-    color: var(--clr-grey-1);
-    line-height: 1.5;
-    font-size: 0.875rem;
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 img:not(.logo) {
-    width: 100%;
+  width: 100%;
 }
 img {
-    display: block;
+  display: block;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    letter-spacing: var(--spacing);
-    text-transform: capitalize;
-    line-height: 1.25;
-    margin-bottom: 0.75rem;
-    font-family: var(--ff-primary);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
 }
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 h3 {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 h4 {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 p {
-    margin-bottom: 1.25rem;
-    color: var(--clr-grey-5);
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
-    h1 {
+  h1 {
     font-size: 4rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 1.75rem;
-    }
-    h4 {
-        font-size: 1rem;
-    }
-    body {
-        font-size: 1rem;
-    }
-    h1,
-    h2,
-    h3,
-    h4 {
-        line-height: 1;
-    }
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 15% auto;
+}
+/* ======================== GOOGLE FONTS ========================== */
+.sidebar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #242529;
+}
+
+.logo-container {
+  margin: 2rem 0 0;
+  width: 10rem;
+  height: 4rem;
+  position: relative;
+}
+.logo-container:after {
+  content: " ";
+  width: 100%;
+  height: 7px;
+  background-color: var(--light2);
+  position: absolute;
+  bottom: -2rem;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 7px solid var(--light2);
+  border-left: 7px solid var(--light2);
+  border-right: 7px solid var(--light2);
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Clicker Script", cursive;
+  color: var(--red);
+}
+
+.logo small {
+  text-transform: uppercase;
+  color: var(--light2);
+}
+.links-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.links-container span {
+  width: 100%;
+  padding: 0 1rem;
+}
+.link-btn {
+  padding: 1.2rem 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+.socials {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials a {
+  padding: 10px;
+}
+
+.socials a i {
+  color: var(--light2);
+  font-size: 2rem;
+}
+/* ======================== MAIN CONTAINER ========================== */
+.main {
+  background-color: #2d2f33;
+}
+/* ======================== MAIN CONTENT FONTS ========================== */
+.main-content {
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  display: none;
+}
+/* ======================== HOME SECTION ========================== */
+.home-content {
+  padding: 10rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  color: var(--light2);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info h2 {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.info h1 {
+  font-family: "Clicker Script", cursive;
+  font-size: 4rem;
+  color: var(--red);
+  padding: 2rem 0;
+}
+.info h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+}
+.info h3 span {
+  color: var(--red);
+}
+.info p {
+  padding: 1.5rem 0;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+/* ========================  BUTTONS ========================== */
+.btn-container {
+  display: flex;
+}
+.btn-container button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 2rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: var(--light1);
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--red);
+  background-color: var(--red);
+  transition: var(--transition);
+}
+.btn-container button:hover {
+  background-color: transparent;
+}
+/* Img/icon */
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+  border: 5px solid var(--red);
+}
+
+.img-container i {
+  font-size: 15rem;
+  color: var(--light2);
+}
+/* ======================== ABOUT SECTION ============================ */
+.content {
+  padding: 5rem 10rem 10rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--light2);
+}
+
+.title {
+  color: var(--red);
+  position: relative;
+}
+.title::after {
+  content: " ";
+  width: 10rem;
+  height: 5px;
+  background-color: var(--red);
+  border-radius: 1px;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+}
+.about h3 {
+  padding: 2rem 0 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.about h3 span {
+  color: var(--red);
+}
+
+.about p {
+  padding: 1rem 0;
+  font-size: 1rem;
+  width: 70%;
+  line-height: 2rem;
+}
+.about-info {
+  display: grid;
+  grid-template-columns: 60% auto;
+}
+.personal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 0 3rem;
+}
+.item {
+  border-bottom: 1px solid var(--light2);
+  margin: 0 2rem 0 0;
+  padding: 1rem 0;
+}
+.item h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0;
+}
+.item small {
+  font-size: 1rem;
+}
+.item small a {
+  color: var(--light2);
+  font-size: 1rem;
+}
+.skills-container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.progress {
+  width: 100%;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--light2);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bar .bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  height: 100%;
+  background-color: var(--red);
+
+  animation-name: animateBar;
+  animation-duration: 2s;
+}
+
+@keyframes animateBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.skill-bar .bar.html span {
+  width: 90%;
+}
+.skill-bar .bar.css span {
+  width: 70%;
+}
+.skill-bar .bar.bootstrap span {
+  width: 30%;
+}
+.skill-bar .bar.javascript span {
+  width: 15%;
+}
+
+/* ======================== SERVICES SECTION ============================ */
+.services-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.services-item {
+  padding: 4rem 1rem;
+  margin: 3rem 1rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: var(--light2);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  transition: var(--transition);
+}
+
+.icon-container {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.icon-container i {
+  font-size: 2rem;
+  transition: var(--transition);
+}
+.services-item:hover .icon-container {
+  background-color: var(--red);
+}
+.services-item:hover i {
+  transform: scale(0.9);
+}
+.services-item h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2rem 0 1rem;
+  color: var(--red);
+}
+.services-item p {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+/* ======================== CONTACT SECTION ============================ */
+
+.contact h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 0.7rem;
+  color: var(--red);
+}
+
+.contact-info {
+  display: grid;
+  width: 100%;
+  padding: 3rem 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: var(--red);
+  padding: 0 0 2rem;
+}
+.contact-item h4 {
+  font-size: 1rem;
+  color: var(--light2);
+  font-weight: 500;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.message h4 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.form-item {
+  display: flex;
+  width: 100%;
+  margin: 1rem 0;
+}
+.form-item input:focus,
+.form-item textarea:focus {
+  border: 1px solid var(--red);
+}
+.form-item .row {
+  width: 50%;
+}
+.form-item .row:first-child {
+  margin-right: 1rem;
+}
+.form-item input,
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid var(--light);
+}
+.form-item textarea {
+  resize: none;
+  min-height: 10rem;
+}
+
+/* ======================== JS RELATED SECTION ============================ */
+.main-content.active {
+  display: block;
+}
+.link-btn.active {
+  background-color: #2d2f33;
+  color: var(--red);
 }

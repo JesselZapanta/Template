@@ -1,17 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- css stylesheet -->
-    <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ======================== FONT AWESOME ==========================   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ======================== CSS STYLESHEET ==========================   -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- ======================== MAIN CONTAINER ==========================   -->
+    <div class="container">
+      <!-- ======================== SIDEBAR ==========================   -->
+      <section class="sidebar">
+        <div class="logo-container">
+          <div class="logo">
+            <a href="#">Jessel</a>
+            <small>Web Developer</small>
+          </div>
+        </div>
+        <div class="links-container">
+          <a href="#" class="link-btn active" data-id="home"
+            ><span><i class="fa-solid fa-house"></i></span> Home</a
+          >
+          <a href="#" class="link-btn" data-id="about"
+            ><span><i class="fa-solid fa-user"></i></span>About</a
+          >
+          <a href="#" class="link-btn" data-id="services"
+            ><span><i class="fa-solid fa-list"></i></span> Services</a
+          >
+          <a href="#" class="link-btn" data-id="projects"
+            ><span><i class="fa-solid fa-briefcase"></i></span> Projects</a
+          >
+          <a href="#" class="link-btn" data-id="contacts"
+            ><span><i class="fa fa-comments"></i></span>Contacts</a
+          >
+        </div>
+        <!-- ======================== SOCIALS ==========================   -->
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <!-- ======================== END OF SOCIALS ==========================   -->
+      </section>
+      <!-- ======================== END OF SIDEBAR ==========================   -->
+
+      <!-- ======================== MAIN CONTENT CONTAINER ==========================   -->
+      <section class="main">
+        <!-- ======================== HOME SECTION ==========================   -->
+        <div class="main-content home active" id="home">
+          <div class="home-content">
+            <div class="info">
+              <h2>Hi, my name is</h2>
+              <h1>Jessel Zapanta</h1>
+              <h3>I'm a <span class="text">Web Developer</span></h3>
+              <p>
+                I'm a web developer based in the Philippines. I'm an extremely
+                aspirational web developer seeking any position in a reputable
+                IT business that will allow me to use my abilities. For
+                businesses and organizations looking to succeed, I specialize in
+                creating engaging and interactive websites.
+              </p>
+              <div class="btn-container">
+                <button type="button">Download CV</button>
+                <button class="link" data-id="contacts">Contact Me</button>
+              </div>
+            </div>
+            <div class="img-container">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+          </div>
+        </div>
+        <!-- ======================== END OF HOME SECTION ==========================   -->
+
+        <!-- ======================== ABOUT SECTION ==========================   -->
+        <div class="main-content" id="about">
+          <div class="content about">
+            <h2 class="title">About Me</h2>
+            <h3>I'm Jessel Zapanta a <span>Web Developer</span></h3>
+            <p>
+              I'm a web developer based in the Philippines. I'm an extremely
+              aspirational web developer seeking any position in a reputable IT
+              business that will allow me to use my abilities. For businesses
+              and organizations looking to succeed, I specialize in creating
+              engaging and interactive websites.
+            </p>
+            <div class="about-info">
+              <div class="personal-info">
+                <div class="item">
+                  <h3>Website</h3>
+                  <small><a href="#">www.jessel.com</a></small>
+                </div>
+                <div class="item">
+                  <h3>Degree</h3>
+                  <small>Computer Science</small>
+                </div>
+                <div class="item">
+                  <h3>Email</h3>
+                  <small>jesselzapanta@gmail.com</small>
+                </div>
+                <div class="item">
+                  <h3>Phone</h3>
+                  <small>+63 930 0192 172</small>
+                </div>
+                <div class="item">
+                  <h3>Address</h3>
+                  <small>Ozamiz City</small>
+                </div>
+                <div class="item">
+                  <h3>Freelance</h3>
+                  <small>Available</small>
+                </div>
+              </div>
+              <div class="skills-container">
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <h4>HTML</h4>
+                  </div>
+                  <div class="bar html"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <h4>CSS</h4>
+                  </div>
+                  <div class="bar css"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <h4>BOOTSTRAP</h4>
+                  </div>
+                  <div class="bar bootstrap"><span></span></div>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-info">
+                    <h4>JAVASCRIPT</h4>
+                  </div>
+                  <div class="bar javascript"><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="link" data-id="contacts">Hire Me</button>
+            </div>
+          </div>
+        </div>
+        <!-- ======================== END OF ABOUT SECTION ==========================   -->
+
+        <!-- ======================== SERVICES SECTION ==========================   -->
+        <div class="main-content services" id="services">
+          <div class="content services">
+            <h2 class="title">Services</h2>
+            <div class="services-content">
+              <div class="services-item">
+                <div class="icon-container">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>
+                  Analyzing clients business requirements and then provides
+                  dependable solutions. Every website should be built with two
+                  primary goals. Firstly, it need to works in all devices,
+                  Secondly, it needs to be fast as possible.
+                </p>
+              </div>
+
+              <div class="services-item">
+                <div class="icon-container">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>
+                  I produce high-quality results that are both economical and
+                  timely. competitive approach to increase output I offer a
+                  complete bringing innovations across a wide spectrum of
+                  services and solutions. Timeliness, quality, and client
+                  satisfaction go hand in hand.
+                </p>
+              </div>
+
+              <div class="services-item">
+                <div class="icon-container">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>
+                  I offer comprehensive website development services. first
+                  comes site development, then comes design. I work with the
+                  newest web development technology and aid in the globalization
+                  of products.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ======================== EMD OF SERVICES SECTION ==========================   -->
+
+        <!-- ======================== PROJECTS SECTION ==========================   -->
+        <div class="main-content projects" id="projects">
+          <div class="content project">
+            <h2 class="title">Projects</h2>
+          </div>
+        </div>
+        <!-- ======================== EMD OF PROJECTS SECTION ==========================   -->
+
+        <!-- ======================== CONTACT SECTION ==========================   -->
+        <div class="main-content contacts" id="contacts">
+          <div class="content contact">
+            <h2 class="title">Contact Me</h2>
+            <h3>Have You Any Questions ?</h3>
+            <h3>I'M AT YOUR SERVICE</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <h4>Call Me</h4>
+                <small>+63 930 0192 172</small>
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-location-pin"></i>
+                <h4>Office</h4>
+                <small>Ozamiz City</small>
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <h4>Email</h4>
+                <small>jesselzapanta@gmail.com</small>
+              </div>
+              <div class="contact-item">
+                <i class="fa fa-globe"></i>
+                <h4>Website</h4>
+                <small>www.jessel.com</small>
+              </div>
+            </div>
+            <div class="message">
+              <h3>SEND ME EMAIL</h3>
+              <h4>IM VERY RESPONSIVE TO MESSAGE</h4>
+              <form action="">
+                <div class="form-item">
+                  <div class="row">
+                    <input type="text" placeholder="Name" required />
+                  </div>
+                  <div class="row">
+                    <input type="email" placeholder="Email" required />
+                  </div>
+                </div>
+                <div class="form-item">
+                  <input type="text" placeholder="Subject" required />
+                </div>
+                <div class="form-item">
+                  <textarea name="message" placeholder="Message"></textarea>
+                </div>
+                <div class="btn-container">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- ======================== EMD OF ABOUT SECTION ==========================   -->
+      </section>
+    </div>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
