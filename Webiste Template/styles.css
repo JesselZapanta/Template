@@ -735,6 +735,33 @@ textarea {
     width: 80vw;
   }
   .info h1 {
+    font-size: 3rem;
+  }
+  .info h3 {
     font-size: 2.5rem;
+  }
+  .content.about p {
+    width: 100%;
+  }
+  .content.services {
+    padding: 0.5rem;
+  }
+  .services-item:last-child {
+    margin-bottom: 5rem;
+  }
+  .content.project {
+    padding: 0;
+  }
+  .projects-item:first-child {
+    margin-top: 3rem;
+  }
+  .projects-item:last-child {
+    margin-bottom: 3rem;
+  }
+  .content.contact h3 {
+    font-size: 1.4rem;
+  }
+  .contact-info {
+    padding: 0;
   }
 }
