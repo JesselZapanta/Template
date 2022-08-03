@@ -206,6 +206,7 @@ h4 {
 /* ========================  BUTTONS ========================== */
 .btn-container {
   display: flex;
+  margin-bottom: 2rem;
 }
 .btn-container button {
   outline: none;
