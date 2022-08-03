@@ -57,9 +57,17 @@
 
       <!-- ======================== MAIN CONTENT CONTAINER ==========================   -->
       <section class="main">
+        <!--  -->
+        <div class="nav-btn-container">
+          <button class="nav-btn">
+            <span class="open-btn"><i class="fa-solid fa-bars"></i></span>
+            <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+          </button>
+        </div>
+
         <!-- ======================== HOME SECTION ==========================   -->
         <div class="main-content home active" id="home">
-          <div class="home-content">
+          <div class="content home">
             <div class="info">
               <h2>Hi, my name is</h2>
               <h1>Jessel Zapanta</h1>
@@ -209,6 +217,38 @@
         <div class="main-content projects" id="projects">
           <div class="content project">
             <h2 class="title">Projects</h2>
+            <div class="projects-content">
+              <div class="projects-item">
+                <div class="project-img-container">
+                  <img src="./img/dfoodie.png" />
+                </div>
+                <div class="link-container">
+                  <a href="https://dfoodie.vercel.app/" target="”_blank”"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="projects-item">
+                <div class="project-img-container">
+                  <img src="./img/dfoodie.png" />
+                </div>
+                <div class="link-container">
+                  <a href="https://dfoodie.vercel.app/" target="”_blank”"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="projects-item">
+                <div class="project-img-container">
+                  <img src="./img/dfoodie.png" />
+                </div>
+                <div class="link-container">
+                  <a href="https://dfoodie.vercel.app/" target="”_blank”"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- ======================== EMD OF PROJECTS SECTION ==========================   -->
@@ -244,20 +284,43 @@
             <div class="message">
               <h3>SEND ME EMAIL</h3>
               <h4>IM VERY RESPONSIVE TO MESSAGE</h4>
-              <form action="">
+              <form
+                action="https://formsubmit.co/e8e405bffa278d650a7baddca7ee5cf3 "
+                method="POST"
+              >
                 <div class="form-item">
                   <div class="row">
-                    <input type="text" placeholder="Name" required />
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      name="name"
+                      id="name"
+                      required
+                    />
                   </div>
                   <div class="row">
-                    <input type="email" placeholder="Email" required />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="form-item">
-                  <input type="text" placeholder="Subject" required />
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
                 </div>
                 <div class="form-item">
-                  <textarea name="message" placeholder="Message"></textarea>
+                  <textarea
+                    name="message"
+                    name="message"
+                    placeholder="Message"
+                  ></textarea>
                 </div>
                 <div class="btn-container">
                   <button type="submit">Send Message</button>
